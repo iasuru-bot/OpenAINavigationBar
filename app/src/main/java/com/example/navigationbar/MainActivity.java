@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         if (itemId==R.id.accueil){ selectedFragment = new FragmentAccueil();}
         else if (itemId==R.id.chatbot){selectedFragment = new FragmentChat();}
         else if (itemId==R.id.image){selectedFragment = new FragmentImage();}
+        else if (itemId==R.id.maps){selectedFragment = new MapsFragment();}
         if (selectedFragment!=null){getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, selectedFragment).commit();}
         return true;
     };

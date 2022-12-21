@@ -15,6 +15,11 @@
     <item
         android:id="@+id/image"
         android:enabled="true"
-        android:icon="@android:drawable/ic_menu_mapmode"
+        android:icon="@android:drawable/ic_menu_camera"
         android:title="OpenAImage" />
+    <item
+        android:id="@+id/maps"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="Maps" />
 </menu>

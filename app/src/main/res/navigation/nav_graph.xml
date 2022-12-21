@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentAccueil">
+
+    <fragment
+        android:id="@+id/fragmentAccueil"
+        android:name="com.example.navigationbar.FragmentAccueil"
+        android:label="fragment_accueil"
+        tools:layout="@layout/fragment_accueil" >
+        <action
+            android:id="@+id/action_fragmentAccueil_to_fragmentChat"
+            app:destination="@id/fragmentChat" />
+        <action
+            android:id="@+id/action_fragmentAccueil_to_fragmentImage"
+            app:destination="@id/fragmentImage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentChat"
+        android:name="com.example.navigationbar.FragmentChat"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/fragmentImage"
+        android:name="com.example.navigationbar.FragmentImage"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_image" />
+</navigation>
